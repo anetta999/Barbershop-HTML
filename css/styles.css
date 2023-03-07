@@ -1,6 +1,7 @@
 :root {
   --primary-bgc-color: #ffffff;
   --secondary-bgc-color: #f7f7f7;
+  --thirdary-bcg-color: #191c26;
   --primary-title-color: #ffffff;
   --secondary-title-color: #303030;
   --primary-text-color: #555555;
@@ -9,6 +10,11 @@
   --accent-color: #ff6c00;
   --main-btn-colour: #ffffff;
   --second-btn-colour: #303030;
+  --primary-link-color: #ffffff;
+  --secondary-link-color: #303030;
+  --thirdary-link-color: #9da4bd;
+  --primary-h3-color: #303030;
+  --secondary-h3-color: #ffffff;
 }
 
 body {
@@ -52,7 +58,7 @@ body {
   font-size: 12px;
   line-height: 1.3;
   letter-spacing: 0.1em;
-  color: #ffffff;
+  color: var(--primary-link-color);
 }
 
 .nav-link:is(:hover, :focus) {
@@ -65,8 +71,318 @@ body {
   line-height: 1.3;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--primary-link-color);
 }
 
 .haeder-btn {
+  color: var(--main-btn-colour);
+}
+
+/** --------HERO--------- */
+
+.hero {
+  background-color: #b89074;
+}
+.hero-links {
+}
+.hero-links-item {
+}
+.hero-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--secondary-link-color);
+}
+
+.hero-link:is(:hover, :focus) {
+  color: var(--accent-color);
+}
+.hero-top-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: rgba(157, 164, 189, 0.6);
+}
+.hero-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: var(--primary-title-color);
+}
+.hero-bottom-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+/** ------ABOUT---------- */
+
+.about {
+  background-color: var(--primary-bgc-color);
+}
+.about-images {
+}
+.about-images-item {
+}
+.about-image {
+}
+.about-top-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: var(--thirdary-text-color);
+}
+.about-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--secondary-title-color);
+}
+.about-bottom-text-one {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+.about-bottom-text-two {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+}
+.about-btn {
+  color: var(--second-btn-colour);
+}
+
+/** ------SERVICES---------- */
+
+.services {
+  background-color: var(--thirdary-bcg-color);
+}
+.services-top-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+}
+.services-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--primary-title-color);
+}
+.services-list {
+}
+.services-list-item {
+}
+.services-list-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+.services-btn {
+  color: var(--primary-link-color);
+}
+
+/**-------ADVANTAGES------- */
+
+.advantages {
+  background-color: var(--primary-bgc-color);
+}
+.advantages-list {
+}
+.advantages-list-item {
+}
+.andantages-list-number {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--thirdary-text-color);
+}
+.advantages-list-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: var(--thirdary-text-color);
+}
+.advantages-top-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: var(--thirdary-text-color);
+}
+.advantages-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--secondary-title-color);
+}
+.advantages-bottom-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+/**------BARBERS-------  */
+
+.barbers {
+  background-color: var(--secondary-bgc-color);
+}
+.barbers-top-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: var(--thirdary-text-color);
+}
+.barbers-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--secondary-title-color);
+}
+.barbers-list {
+}
+.barbers-list-item {
+}
+.barbers-list-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.38;
+  letter-spacing: 0.02em;
+  color: var(--primary-h3-color);
+}
+.barbers-list-text {
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+/**------GALLERY------ */
+
+.gallery {
+  background-color: var(--primary-bgc-color);
+}
+.gallery-top-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: var(--thirdary-text-color);
+}
+.gallery-title {
+}
+.gallery-list {
+}
+.gallery-list-item {
+}
+.gallery-list-photo {
+}
+
+/**-------BOOKING------- */
+
+.booking {
+  background-color: var(--thirdary-bcg-color);
+}
+.booking-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--primary-title-color);
+}
+
+/**------CONTACTS-------*/
+
+.contacts {
+  background-color: var(--thirdary-bcg-color);
+}
+.contacts-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--primary-title-color);
+}
+.contacts-list {
+}
+.contacts-list-item {
+}
+
+.contacts-address-link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--thirdary-link-color);
+}
+
+.contacts-tel-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--thirdary-link-color);
+}
+
+.contacts-mail-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  text-decoration-line: underline;
+  color: var(--thirdary-link-color);
+}
+.contacts-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: var(--secondary-h3-color);
+}
+.contacts-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+/**-------FOOTER--------  */
+
+.footer {
+  background-color: var(--secondary-bgc-color);
+}
+.footer-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--secondary-text-color);
+}
+.footer-links {
+}
+.footer-links-item {
+}
+.footer-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--secondary-link-color);
+}
+
+.footer-link:is(:hover, :focus) {
+  color: var(--accent-color);
 }
